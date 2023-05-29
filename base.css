@@ -34,13 +34,13 @@ a {
 
 .side__menu a {
     display: block;
-    width: 100px;
+    width: 65px;
     border-bottom: 2px solid #333;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .side__menu a:hover {
-    width: 120px;
+    width: 90px;
     border-color: #09b59b;
     color: #09b59b;
 }
