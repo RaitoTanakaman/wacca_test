@@ -183,7 +183,7 @@ let option = {
 	font_neon_color: '', // neon color ('', hex, rgba, name, 'random')
 	default_angle: 0, // random default angle (deg or 'random')
 	rotate_mode: 3, // rotation mode (0=false 1=X 2=Y 3=XY 4=mix)
-	rotate_speed: 5, // rotate speed (min 1)
+	rotate_speed: 2, // rotate speed (min 1)
 	rotate_reverse: false, // rotate reverse (true or false)
 };
 
