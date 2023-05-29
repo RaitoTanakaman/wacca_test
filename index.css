@@ -14,7 +14,7 @@
 
     .logo__box {
         position: absolute;
-        top: 2.7rem;
+        top: 2.4rem;
         left: 6rem;
     }
 
@@ -60,7 +60,7 @@
 
     .header__title h1 {
         font-weight: normal;
-        font-size: 38px;
+        font-size: 28px;
         margin-bottom: 1rem;
     }
 
@@ -167,8 +167,8 @@
         background-color: #fff;
         position: relative;
         z-index: 100;
-        width: 48%;
-        padding: 4rem 4rem 4rem 171.797px;
+        width: 56%;
+        padding: 6rem 10rem 0 171.797px;
     }
 
     .aboutus__bg--desc p {
@@ -253,10 +253,10 @@
 
     .works__slider--top img, .works__slider--under img {
         width: 550px;
-        height: 280px;
+        height: 340px;
         object-fit: cover;
         border-radius: 0 2.5rem 0 2.5rem;
-        margin: 2rem;
+        margin: 1rem;
     }
 
     .works__section .more__btn {
@@ -312,7 +312,7 @@
     .arrow__icon {
         position: relative;
         display: block;
-        width: 55px;
+        width: 40px;
         height: 1px;
         background-color: #09b59b;
     }
