@@ -178,7 +178,7 @@ let option = {
 	font_size: 20, // font size (px)
 	last_space: true, // Add a space after the last character. (true or false)
 	font_color: '#09B59B', // font color (hex, rgba, name, 'random')
-	font_family: 'monospace, serif',
+	font_family: 'Josefin Sans, serif',
 	font_weight: '', // font weight ('' , bold)
 	font_neon_color: '', // neon color ('', hex, rgba, name, 'random')
 	default_angle: 0, // random default angle (deg or 'random')
