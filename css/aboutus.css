@@ -1,0 +1,144 @@
+@media screen and (min-width: 1440px) {
+    /* about us section start  */
+    .u-aboutus__section {
+        margin-bottom: 12rem;
+    }
+    .u-aboutus__section .section__title {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    .aboutus__top {
+        position: relative;
+        height: 500px;
+        width: 100%;
+    }
+
+    .aboutus__top img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 400px;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .aboutus__content {
+        position: absolute;
+        z-index: 100;
+        background-color: #fff;
+        width: 70%;
+        padding: 6rem 8rem;
+        bottom: -8rem;
+        left: 0;
+        text-align: center;
+
+    }
+
+    .aboutus__content h3 {
+        font-weight: 300;
+        font-size: 28px;
+        margin-bottom: 2rem;
+    }
+
+    .aboutus__content h3 span {
+        font-weight: 600;
+    }
+
+    .aboutus__content p {
+        line-height: 2.5rem;
+    }
+    /* end  */
+
+
+    /* member section start  */
+    .member__section {
+        background-color: #09B59B;
+        padding: 6rem 0;
+    }
+
+    .member__section .under__title--second {
+        color: #fff;
+        margin-bottom: 4rem;
+        
+    }
+
+    .member__box {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .member__card {
+        width: 35%;
+        text-align: center;
+        color: #fff;
+    }
+
+    .member__card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .name__english {
+        font-size: 12px;
+        margin: 1rem 0 0.3rem 0;
+    }
+
+    .member__card h4 {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+    }
+
+    .member__card .title__underline {
+        background-color: #fff;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        width: 30px;
+    }
+
+    .member__card ul {
+        text-align: left;
+    }
+
+    .member__card ul li {
+        font-size: 12px;
+        margin: 1rem 0;
+        
+    }
+
+    /* end  */
+
+    /* company section star  */
+    .company__section {
+        margin: 8rem auto;
+        width: 76%;
+    }
+
+    .company__section .under__title--second {
+        margin-bottom: 4rem;
+    }
+
+    .company__section table  {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .company__section table tbody tr {
+        border-bottom: 1px solid #000;
+    }
+
+    .company__section table tbody tr .td__left {
+        width: 150px;
+        padding: 2rem 0;
+    }
+
+
+    /* end  */
+
+
+}

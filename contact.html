@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- my css file  -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/contact.css">
+        <link rel="stylesheet" href="./css/contact_section.css">
+    
+        <!-- fontawesome cdn  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- slick css cdn -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+                        
+        <title>Wacca Test</title>
+    </head>
+    <body>
+    <!-- side menu start -->
+    <div class="side__menu">
+        <a href="">MENU</a>
+    </div>
+    <!-- side menu end -->
+    <header>
+        
+        <!-- navbar start -->
+        <nav>
+            <div class="logo__box">
+                <div id="circular__box">
+                    <p id="circular__text">wacca wacca wacca wacca wacca wacca wacca wacca wacca</p>
+                </div>
+                <a href="" class="logo__text">
+                    <img src="./logo_img/wacca_w.png" alt="" width="60" height="60">
+                </a>
+            </div>
+            <div class="nav__inner">
+                <ul class="nav__menu">
+                    <li><a href="">Information</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+
+
+
+    <main>
+        <section class="u-contact__section">
+            <div class="section__title">
+                <span>お問い合わせ</span>
+                <h2>Contact</h2>
+            </div>
+            <p class="contact__tips">制作のご相談・ご質問はこちらからお問い合わせください。</p>
+
+            <div class="form__box">
+                <div class="input__box">
+                    <p>お名前<span>*</span></p>
+                    <input type="text" name="name">
+                </div>
+                <div class="input__box">
+                    <p>メールアドレス<span>*</span></p>
+                    <input type="email" name="email">
+                </div>
+                <div class="input__box">
+                    <p>お問い合わせ項目</p>
+                    <select name="kind" id="kind__select">
+                        <option value="見積り依頼">見積り依頼</option>
+                        <option value="その他">その他</option>
+                    </select>
+                </div>
+                <div class="input__box">
+                    <p>お問い合わせ内容<span>*</span></p>
+                    <textarea name="content" id="content__area" cols="30" rows="10"></textarea>
+                </div>
+                
+            </div>
+
+            
+        </section>
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer__container">
+            <div class="back__btn">
+                <a href=""><i class="fa-solid fa-chevron-up"></i>TOP</a>
+            </div>
+            <h3>Wacca.me</h3>
+            <div class="footer__nav">
+                <p><i class="fa-regular fa-copyright" style="color: #aaa;"></i> Wacca.me 2023</p>
+                <ul class="footer__nav--menu">
+                    <li><a href="">Information</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- circle text animation  -->
+    <script src="./js/rotate-circular-text-animation.js"></script>
+
+    <!-- slick js cdn  -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- my script file  -->
+    <script type="text/javascript" src="./js/index.js"></script>
+    </body>
+</html>

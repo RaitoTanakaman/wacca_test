@@ -1,0 +1,93 @@
+/* contact style start  */
+.contact__section {
+    width: 76%;
+    background-color: #F6F7F0;
+    margin: 8rem auto;
+    padding: 4rem 0;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact__section .section__title {
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    width: fit-content;
+    text-align: center;
+}
+
+.contact__section p {
+    text-align: center;
+    margin: 4rem auto 0 auto;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 10;
+    width: fit-content;
+}
+
+.contact__section a {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: -4rem;
+    bottom: -6rem;
+    border: 1px solid #09b59b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 1;
+}
+
+ .arrow {
+    transform: rotate(-45deg);
+}
+
+.arrow__icon {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #09b59b;
+}
+.arrow__icon::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -2.5px;
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #09b59b;
+    transform: rotate(-45deg);
+}
+.arrow__icon::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: -2.5px;
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #09b59b;
+    transform: rotate(45deg);
+}
+
+.contact__section a:hover {
+    background-color: #09b59b;
+    transform: scale(2,2);
+}
+
+.contact__section a:hover .arrow {
+    transform: rotate(-45deg) scale(0.5);
+}
+
+.contact__section a:hover .arrow__icon,
+.contact__section a:hover .arrow__icon::after,
+.contact__section a:hover .arrow__icon::before {
+    background-color: #fff;
+}
+
+/* end  */

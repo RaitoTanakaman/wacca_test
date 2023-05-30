@@ -1,0 +1,43 @@
+@media screen and (min-width: 1440px) {
+    nav {
+        margin-bottom: 12rem;
+        padding: 3rem 0;
+        
+    }
+    
+    .logo__box {
+        position: absolute;
+        top: 2.4rem;
+        left: 6rem;
+    }
+    
+    #circular__box {
+        width: 100%;
+    }
+    
+    .logo__text {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    .nav__inner {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .nav__menu {
+        width: 42%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav__menu a {
+        letter-spacing: 0.5px;
+    }
+}

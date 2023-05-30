@@ -1,3 +1,5 @@
+
+// home works slider script start
 $(document).ready(function(){
     $('.works__slider--top').slick({
         autoplay: true,
@@ -22,4 +24,11 @@ $(document).ready(function(){
         pauseOnHover: false, // スライダーにマウスホバーした時にスライドを停止させるか
         rtl: true, // スライダーを左から右に流す（逆向き）
     });
+});
+//end
+
+
+// under information category menu script start 
+$('.category__list').on('click', function() {
+    $('.category__nav ul').css('display', 'flex');
 });

@@ -1,0 +1,57 @@
+@media screen and (min-width:1440px) {
+    .u-contact__section {
+        width: 50%;
+        margin: 8rem auto;
+    }
+
+    .u-contact__section .section__title {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .contact__tips {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .form__box {
+        background-color: #F6F7F0;
+        padding: 6rem 4rem;
+    }
+
+    .input__box {
+        margin-bottom: 2rem;
+    }
+
+    .input__box p {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .input__box input {
+        width: 100%;
+        padding: 0.7rem;
+    }
+
+    .input__box p span {
+        margin-left: 0.2rem;
+        color: #ff0000;
+    }
+
+    .input__box input:focus,  .input__box #kind__select:focus, .input__box textarea:focus {
+        outline: none;
+    }
+
+    .input__box #kind__select {
+        width: 100%;
+        padding: 0.9rem 0.7rem;
+    }
+
+    .input__box textarea {
+        resize: none;
+        width: 100%;
+        height: 300px;
+        padding: 1rem;
+    }
+
+
+}
