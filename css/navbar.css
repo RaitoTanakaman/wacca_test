@@ -1,4 +1,4 @@
-@media screen and (min-width: 1440px) {
+
     nav {
         margin-bottom: 12rem;
         padding: 3rem 0;
@@ -15,9 +15,8 @@
         width: 100%;
     }
     
-    .logo__text {
-        font-size: 24px;
-        font-weight: 600;
+    .logo__text img  {
+        width: 60px;
     }
     
     .nav__inner {
@@ -40,4 +39,117 @@
     .nav__menu a {
         letter-spacing: 0.5px;
     }
-}
+
+    .nav__menu--modal {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 4rem;
+        display: none;
+        
+    }
+
+    .modal__inner {
+        background-color: #09b59b;
+        width: 30%;
+        height: 80%;
+        border-radius: 0 2.5rem 2.5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .close__pc {
+        position: absolute;
+        top: 2rem;
+        right:2rem;
+        font-size: 20px;
+
+    }
+
+    .modal__menu li {
+        margin: 2rem;
+    }
+
+    .modal__menu li a {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .close__sp {
+        display: none;
+    }
+
+
+    
+
+    @media screen and (max-width: 480px) {
+        nav {
+            padding: 1rem 0 3rem 0;
+        }
+        .logo__box {
+            top: 1.1rem;
+            left: 18.89px;
+        }
+        .logo__box img {
+            width: 50px;
+        }
+
+        .nav__inner {
+            justify-content: right;
+        }
+        .nav__menu {
+            display: none;
+        }
+
+        .hamburger__icon span {
+            width: 25px;
+            height: 4px;
+            background-color: black;
+            margin: 6px 0;
+            transition: .5s;
+            display: block;
+            border-radius: 2rem;
+        }
+        .hamburger__icon:hover span {
+            opacity:0.6;
+            /* 透明度を指定 */
+            transform:skewX(70deg);
+            /* X軸(横)の傾斜角度を指定 */
+        }
+
+
+        .nav__menu--modal {
+            justify-content: center;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .modal__inner {
+            width: 92%;
+            height: 92%;
+            border-radius: 0;
+            
+        }
+
+        .close__pc {
+            display: none;
+        }
+
+        .modal__menu li {
+            margin: 2rem;
+            text-align: center;
+        }
+    
+        .close__sp {
+            display: block;
+        }
+
+    }

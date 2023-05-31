@@ -1,4 +1,4 @@
-@media screen and (min-width: 1440px) {
+
     /* about us section start  */
     .u-aboutus__section {
         margin-bottom: 12rem;
@@ -140,5 +140,57 @@
 
     /* end  */
 
+@media screen and (max-width: 480px) {
 
+    .u-aboutus__section {
+        margin-bottom: 8rem;
+    }
+    .u-aboutus__section .section__title {
+        margin-bottom: 4rem;
+    }
+
+    .aboutus__top {
+        height: auto;
+    }
+
+    .aboutus__top img {
+        width: 100%;
+        position: static;
+    }
+
+    .aboutus__content {
+        padding: 0;
+        position: static;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .aboutus__content h3 {
+        font-size: 22px;
+    }
+
+    .aboutus__content p {
+        text-align: left;
+    }
+
+    /* member sp style start  */
+    .member__section {
+        padding: 4rem 0;
+    }
+
+    .member__box {
+        flex-flow: column;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .member__card {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .member__card .title__underline {
+        margin-bottom: 1.5rem;
+    }
+    /* end  */
 }

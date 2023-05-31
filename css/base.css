@@ -4,7 +4,10 @@ body {
     font-weight: 300;
     font-family: 'Hiragino Sans', Meiryo, sans-serif;
     letter-spacing: 1px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
+
 
 h1, h2, h3 {
     font-weight: 600;
@@ -36,14 +39,15 @@ a {
     left: 0;
 }
 
-.side__menu a {
+.side__menu span {
     display: block;
     width: 65px;
     border-bottom: 2px solid #333;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-.side__menu a:hover {
+.side__menu span:hover {
     width: 90px;
     border-color: #09b59b;
     color: #09b59b;

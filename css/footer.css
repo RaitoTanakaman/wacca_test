@@ -1,4 +1,4 @@
-@media screen and (min-width:1440px) {
+
      /* footer style start  */
      footer {
         padding-bottom: 4rem;
@@ -53,4 +53,24 @@
         letter-spacing: 0.5px;
     }
     /* footer style end  */
-}
+
+
+    @media screen and (max-width: 480px) {
+        .footer__container h3 {
+            display: none;
+        }
+
+        .footer__nav {
+            flex-flow: column-reverse;
+        }
+
+        .footer__nav--menu {
+            flex-flow: column;
+            margin: 2rem 0;
+        }
+
+        .footer__nav--menu li {
+            text-align: center;
+            margin: 1rem 0;
+        }
+    }
