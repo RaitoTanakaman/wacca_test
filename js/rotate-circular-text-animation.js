@@ -187,6 +187,35 @@ let option = {
 	rotate_reverse: false, // rotate reverse (true or false)
 };
 
+let optionSp = {
+	target_element: '#circular__text', // taget HTML element ('#id' '.class' etc)
+	diameter: 250, // diameter of a circle (min 1 max 10)
+	position_top: 40, // circular position y (%)
+	position_left: 50, // circular position x (%)
+	font_size: 14, // font size (px)
+	last_space: true, // Add a space after the last character. (true or false)
+	font_color: '#09B59B', // font color (hex, rgba, name, 'random')
+	font_family: 'Josefin Sans, serif',
+	font_weight: '', // font weight ('' , bold)
+	font_neon_color: '', // neon color ('', hex, rgba, name, 'random')
+	default_angle: 0, // random default angle (deg or 'random')
+	rotate_mode: 3, // rotation mode (0=false 1=X 2=Y 3=XY 4=mix)
+	rotate_speed: 2, // rotate speed (min 1)
+	rotate_reverse: false, // rotate reverse (true or false)
+};
 
 
-RotateCircularTextAnimation(option);
+var windowWidth = window.innerWidth;
+var windowTab = 768;
+var windowSp = 480;
+console.log(windowWidth);
+if ((windowWidth <= windowTab) && (windowSp < windowWidth)) {
+    //横幅768px以下 481px以上に適用させるJavaScriptを記述
+
+    } else if(windowWidth <= windowSp) {
+    //横幅480px 以下に適用させるJavaScriptを記述
+		RotateCircularTextAnimation(optionSp);
+
+	} else {
+		RotateCircularTextAnimation(option);
+}

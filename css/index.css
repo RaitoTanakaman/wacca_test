@@ -99,18 +99,21 @@
         align-items: center;
     }
 
-    .article__inner .date {
+    .date__category {
+        display: flex;
+        
+    }
+
+    .date__category .date {
         margin-right: 3rem;
         font-size: 12px;
         letter-spacing: 0.5px;
     }
 
-    .article__inner .category {
+    .date__category .category {
         width: 150px;
-    }
-
-    .article__inner .category {
         color: #09b59b;
+
     }
 
     .article__inner .desc {
@@ -267,10 +270,11 @@
 
 
     .header__title h1 {
-        font-size: 24px;
+        font-size: 20px;
         width: 90%;
         margin: 0 auto 1rem;
         line-height: 2.5rem;
+        font-family: 'Lato', sans-serif;
 
     }
 
@@ -289,13 +293,24 @@
         margin-bottom: 3rem;
     }
 
-    .article__inner .date {
+    .article__inner {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+
+    .date__category {
+        margin-bottom: 0.5rem;
+    }
+    .date__category .date {
         margin-right: 1rem;
     }
 
-    .article__inner .category {
+    .date__category .category {
         width: 100px;
     }
+
+
 
     .information__section .more__btn {
         text-align: center;

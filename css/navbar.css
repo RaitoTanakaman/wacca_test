@@ -45,20 +45,19 @@
         z-index: 9999;
         width: 100%;
         height: 100%;
-        background-color: #fff;
+        
         top: 0;
         left: 0;
         display: flex;
         align-items: center;
-        padding-left: 4rem;
         display: none;
         
     }
 
     .modal__inner {
         background-color: #09b59b;
-        width: 30%;
-        height: 80%;
+        width: 35%;
+        height: 100%;
         border-radius: 0 2.5rem 2.5rem 0;
         display: flex;
         justify-content: center;
@@ -93,6 +92,7 @@
     @media screen and (max-width: 480px) {
         nav {
             padding: 1rem 0 3rem 0;
+            margin-bottom: 4rem;
         }
         .logo__box {
             top: 1.1rem;

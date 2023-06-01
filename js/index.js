@@ -4,9 +4,9 @@
     var windowSp = 480;
     console.log(windowWidth)
     if ((windowWidth <= windowTab) && (windowSp < windowWidth)) {
-    //横幅768px以下（スマホ）に適用させるJavaScriptを記述
+    //横幅768px以下 481px以上に適用させるJavaScriptを記述
     } else if(windowWidth <= windowSp) {
-    //横幅768px以上（PC、タブレット）に適用させるJavaScriptを記述
+    //横幅480px 以下に適用させるJavaScriptを記述
     // home works slider script start
     $(document).ready(function(){
         $('.works__slider--top').slick({
@@ -34,6 +34,8 @@
         });
     });
     //end
+    $('.header__title h1').html('<h1>まるでSNSのような、<br><span>"Wacca"</span> をつくる。</h1>');
+    $('.aboutus__content').html('<h3>まるでSNSのような、<br><span>"Wacca"</span> をつくる。</h3><p>私たちWacca(輪っか)は、2023年に設立しました。昨今では、SNSでたくさんの出会いや繋がりができますその出会いはとても素晴らしく、ビジネスの幅を広げるだけでなく、自身や企業が新たな世界を作るツールとなっています。私たちは、出会いや繋がりを"Wacca"(輪っか)と呼んでいます。WebサイトをSNSのようにもっと多くの人や世界を繋ぐツールにしたいと考えています。SNSのように手軽に扱えることができ、新たな出会いを作るWebサイトを私たちが作ります。</p>');
     } else {
         // home works slider script start
     $(document).ready(function(){
