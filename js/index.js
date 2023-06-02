@@ -94,5 +94,78 @@ $('.fa-solid').on('click', function() {
 // hamburger script start 
 $('.hamburger__icon').on('click', function() {
     $('.nav__menu--modal').css('display', 'flex');
+    $('body').css('overflow', 'hidden');
 });
+// end 
+
+//hover action disable
+var touch = 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+
+if(touch) {
+  try {
+    for (var si in document.styleSheets) {
+      var styleSheet = document.styleSheets[si];
+      if (!styleSheet.rules) continue;
+
+      for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+        if (!styleSheet.rules[ri].selectorText) continue;
+
+        if (styleSheet.rules[ri].selectorText.match(':hover')) {
+          styleSheet.deleteRule(ri);
+        }
+      }
+    }
+  } catch (ex) {}
+}
+//end
+
+// fade in animation script 
+$(function() {
+    setTimeout(() => {
+        $('.nav__menu a').each(function(k,v) {
+            setTimeout(() => {
+                $(this).addClass('fadein__below');
+    
+            }, 200*k);
+    
+        });
+
+        setTimeout(() => {
+            $('.logo__box').addClass('fadein__right');
+        },1200);
+
+        setTimeout(() => {
+            $('.header__title h1').css('opacity', '1');
+            $('.header__title .title__english').css('opacity', '1');
+        }, 1800);
+        
+        
+    }, 1000);
+
+    setTimeout(() => {
+        $('#circular__box').css('opacity', '1');
+    }, 3000);
+});
+
+
+
+var scroll;
+var winH = $(window).height();
+let array = [
+'.nav__menu a',
+]
+
+// $.each(array, function(index, value) {
+//     var objTop = $(value).offset().top;
+//     console.log(objTop);
+
+//     $(window).on('scroll', function(){
+//         scroll = $(window).scrollTop();
+//         if(scroll >= objTop - winH){
+//         //ここに処理
+//         $(value).addClass('fadein__below');
+//     }
+//     });
+// });
+
 // end 

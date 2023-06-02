@@ -67,6 +67,7 @@
         .footer__nav--menu {
             flex-flow: column;
             margin: 2rem 0;
+            width: fit-content;
         }
 
         .footer__nav--menu li {

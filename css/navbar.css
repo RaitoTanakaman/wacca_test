@@ -9,10 +9,15 @@
         position: absolute;
         top: 2.4rem;
         left: 6rem;
+        opacity: 0;
+        transform: translateX(3rem);
+
     }
     
     #circular__box {
         width: 100%;
+        opacity: 0;
+        transition: 0.5s;
     }
     
     .logo__text img  {
@@ -38,6 +43,9 @@
     
     .nav__menu a {
         letter-spacing: 0.5px;
+        opacity: 0;
+        display: block;
+        transform: translateY(2rem);
     }
 
     .nav__menu--modal {
