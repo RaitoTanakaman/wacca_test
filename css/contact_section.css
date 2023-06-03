@@ -7,6 +7,8 @@
     border-radius: 2rem;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(1rem);
 }
 
 .contact__section .section__title {

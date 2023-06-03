@@ -122,50 +122,133 @@ if(touch) {
 // fade in animation script 
 $(function() {
     setTimeout(() => {
-        $('.nav__menu a').each(function(k,v) {
-            setTimeout(() => {
-                $(this).addClass('fadein__below');
-    
-            }, 200*k);
-    
-        });
+        $('.header__title h1').addClass('fadein__high');
 
         setTimeout(() => {
-            $('.logo__box').addClass('fadein__right');
-        },1200);
+            $('.logo__box').addClass('fadein__normal');
+            $('.header__container img').addClass('fadein__normal');
+            $('.nav__menu a').each(function(k,v) {
+                setTimeout(() => {
+                    $(this).addClass('fadein__high');
+        
+                }, 200*k);
+        
+            });
+        },1000);
 
         setTimeout(() => {
-            $('.header__title h1').css('opacity', '1');
-            $('.header__title .title__english').css('opacity', '1');
-        }, 1800);
+            
+            $('.header__title .title__english').addClass('fadein__normal');
+        }, 200);
+
         
         
-    }, 1000);
+    }, 800);
 
     setTimeout(() => {
         $('#circular__box').css('opacity', '1');
-    }, 3000);
+    }, 4200);
 });
 
 
 
 var scroll;
-var winH = $(window).height();
+var winH = $(window).height() - 100;
 let array = [
-'.nav__menu a',
+'.information__section .section__title',
+'.article__box article',
+'.information__section .more__btn a',
+'.aboutus__bg',
+'.aboutus__bg--title .section__title',
+'.aboutus__bg--desc p',
+'.aboutus__bg--desc .more__btn a',
+'.service__section .section__title',
+'.service__card',
+'.service__section .more__btn a',
+'.works__section .section__title',
+'.works__slider--top',
+
+
+
 ]
 
-// $.each(array, function(index, value) {
-//     var objTop = $(value).offset().top;
-//     console.log(objTop);
+$.each(array, function(index, value) {
 
-//     $(window).on('scroll', function(){
-//         scroll = $(window).scrollTop();
-//         if(scroll >= objTop - winH){
-//         //ここに処理
-//         $(value).addClass('fadein__below');
-//     }
-//     });
-// });
+    if($(value).length > 1) {
+        var objTop = $(value).offset().top;
+        $(window).on('scroll', function(){
+            scroll = $(window).scrollTop();
+            if(scroll >= objTop - winH){
+            //ここに処理
+            $(value).each(function(k,v) {
+                setTimeout(() => {
+                    $(this).addClass('fadein__high');
+                }, 400*k);
+            });
+            
+        }
+        });
+
+    } else {    
+        console.log(value);
+        var objTop = $(value).offset().top;
+        $(window).on('scroll', function(){
+            scroll = $(window).scrollTop();
+            if(scroll >= objTop - winH){
+
+                $(value).addClass('fadein__normal');
+            }
+        });
+    }
+});
+
+$(function() {
+    var objTop = $('.service__box').offset().top;
+    $(window).on('scroll', function(){
+        scroll = $(window).scrollTop();
+        if(scroll >= objTop - winH){
+        //ここに処理
+        $('.border__slide--top').html(`.service__box:before {animation: borderSlideX 1s linear forwards;}}`);
+        $('.border__slide--under').html(`.service__box:after {animation: borderSlideX 1s linear forwards;}}`);
+        $('.side__line--left').addClass('add__animation');
+        $('.side__line--right').addClass('add__animation');
+    }
+    });
+});
+
+$(function() {
+    var objTop = $('.works__slider--under').offset().top;
+    $(window).on('scroll', function(){
+        scroll = $(window).scrollTop();
+        if(scroll >= objTop - winH){
+        //ここに処理
+        $('.works__slider--under').addClass('fadein__normal');
+    }
+    });
+
+    
+});
+
+$(function() {
+    var objTop = $('.contact__section').offset().top;
+    $(window).on('scroll', function(){
+        scroll = $(window).scrollTop();
+        if(scroll >= objTop - winH){
+        //ここに処理
+        $('.contact__section').addClass('fadein__normal');
+
+    }
+    });
+
+    
+});
+
+
+
+
+
+
+
+
 
 // end 
