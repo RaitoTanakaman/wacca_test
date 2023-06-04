@@ -123,6 +123,13 @@ if(touch) {
 $(function() {
     setTimeout(() => {
         $('.header__title h1').addClass('fadein__high');
+        $(`.u-information__section .section__title,
+        .u-aboutus__section .section__title,
+        u-service__section .section__title,
+        .u-contact__section .section__title,
+        .u-works__section .section__title,
+        .contact__tips,
+        .form__box`).addClass('fadein__high');
 
         setTimeout(() => {
             $('.logo__box').addClass('fadein__normal');
@@ -151,97 +158,108 @@ $(function() {
 });
 
 
+$(function() {
+    var scroll;
+    var winH = $(window).height() - 100;
+    let array = [
+    '.information__section .section__title',
+    '.article__box article',
+    '.information__section .more__btn a',
+    '.aboutus__bg',
+    '.aboutus__bg--title .section__title',
+    '.aboutus__bg--desc p',
+    '.aboutus__bg--desc .more__btn a',
+    '.service__section .section__title',
+    '.service__card',
+    '.service__section .more__btn a',
+    '.works__section .section__title',
+    '.works__box',
+    '.works__section .more__btn a',
+    '.contact__section',
+    '.category__nav p',
+    '.aboutus__top img',
+    '.aboutus__content',
+    '.member__section .under__title--second',
+    '.member__card img',
+    '.member__card--content',
+    'company__section .under__title--second',
+    '.company__section table',
+    '#service__first',
+    '#service__second',
+    '#service__third',
+    '.flow__section .under__title--second',
+    '.flow__circle',
+    '.flow__arrow',
+    '.flow__section .flow__tips',
+    '.u-works__box article',
 
-var scroll;
-var winH = $(window).height() - 100;
-let array = [
-'.information__section .section__title',
-'.article__box article',
-'.information__section .more__btn a',
-'.aboutus__bg',
-'.aboutus__bg--title .section__title',
-'.aboutus__bg--desc p',
-'.aboutus__bg--desc .more__btn a',
-'.service__section .section__title',
-'.service__card',
-'.service__section .more__btn a',
-'.works__section .section__title',
-'.works__slider--top',
+    ]
+    
+    $.each(array, function(index, value) {
+    
+        if($(value).length > 1) {
+            var objTop = $(value).offset().top;
+            $(window).on('scroll', function(){
+                scroll = $(window).scrollTop();
+                if(scroll >= objTop - winH){
+                //ここに処理
+                $(value).each(function(k,v) {
+                    if($(v).attr('class') == 'flow__arrow') {
+                        setTimeout(() => {
+                            setTimeout(() => {
+                                $(this).addClass('fadein__high');
+                            }, 800*k);
+                        }, 400)
+                    } else if($(v).attr('class') == 'flow__circle') {
+                        setTimeout(() => {
+                            $(this).addClass('fadein__high');
+                        }, 800*k);
+                    } else {
+                        setTimeout(() => {
+                            $(this).addClass('fadein__high');
+                        }, 400*k);
+                    }
 
+                });
+                
+            }
+            });
+    
+        } else {    
+            console.log($(value).length, ':', value)
+            if ($(value).length) {
+                var objTop = $(value).offset().top;
+                $(window).on('scroll', function(){
+                    scroll = $(window).scrollTop();
+                    if(scroll >= objTop - winH){
+        
+                        $(value).addClass('fadein__normal');
+                    }
+                });
+            }
+            
+        }
+    });
 
-
-]
-
-$.each(array, function(index, value) {
-
-    if($(value).length > 1) {
-        var objTop = $(value).offset().top;
+    $(function() {
+        var objTop = $('.service__box').offset().top;
         $(window).on('scroll', function(){
             scroll = $(window).scrollTop();
             if(scroll >= objTop - winH){
             //ここに処理
-            $(value).each(function(k,v) {
-                setTimeout(() => {
-                    $(this).addClass('fadein__high');
-                }, 400*k);
-            });
-            
+            $('.border__slide--top').html(`.service__box:before {animation: borderSlideX 1s linear forwards;}}`);
+            $('.border__slide--under').html(`.service__box:after {animation: borderSlideX 1s linear forwards;}}`);
+            $('.side__line--left').addClass('add__animation');
+            $('.side__line--right').addClass('add__animation');
         }
         });
-
-    } else {    
-        console.log(value);
-        var objTop = $(value).offset().top;
-        $(window).on('scroll', function(){
-            scroll = $(window).scrollTop();
-            if(scroll >= objTop - winH){
-
-                $(value).addClass('fadein__normal');
-            }
-        });
-    }
-});
-
-$(function() {
-    var objTop = $('.service__box').offset().top;
-    $(window).on('scroll', function(){
-        scroll = $(window).scrollTop();
-        if(scroll >= objTop - winH){
-        //ここに処理
-        $('.border__slide--top').html(`.service__box:before {animation: borderSlideX 1s linear forwards;}}`);
-        $('.border__slide--under').html(`.service__box:after {animation: borderSlideX 1s linear forwards;}}`);
-        $('.side__line--left').addClass('add__animation');
-        $('.side__line--right').addClass('add__animation');
-    }
     });
 });
 
-$(function() {
-    var objTop = $('.works__slider--under').offset().top;
-    $(window).on('scroll', function(){
-        scroll = $(window).scrollTop();
-        if(scroll >= objTop - winH){
-        //ここに処理
-        $('.works__slider--under').addClass('fadein__normal');
-    }
-    });
+
+
 
     
-});
-
-$(function() {
-    var objTop = $('.contact__section').offset().top;
-    $(window).on('scroll', function(){
-        scroll = $(window).scrollTop();
-        if(scroll >= objTop - winH){
-        //ここに処理
-        $('.contact__section').addClass('fadein__normal');
-
-    }
-    });
-
-    
-});
 
 
 

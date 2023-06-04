@@ -113,3 +113,10 @@ a {
 }
 /* end  */
 
+
+
+@media screen and (max-width: 480px) {
+    .side__menu {
+        display:  none;
+    }
+}

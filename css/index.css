@@ -112,7 +112,7 @@
     /* about us style start */
     .aboutus__section {
         position: relative;
-        margin: 8rem 0;
+        margin: 14rem 0;
     }
 
     .aboutus__bg {
@@ -170,7 +170,7 @@
 
     /* service style start */
     .service__section {
-        margin: 8rem 0;
+        margin: 14rem 0;
     }
 
     .service__section .section__title {
@@ -271,7 +271,7 @@
 
     /* works style start */
     .works__section {
-        margin: 8rem 0;
+        margin: 14rem 0;
     }
 
     .works__section .section__title {
@@ -280,16 +280,17 @@
         transform: translateY(1rem);
     }
 
-    .works__slider--top {
-        margin-bottom: 1rem;
+    .works__box {
         opacity: 0;
         transform: translateY(1rem);
     }
 
+    .works__slider--top {
+        margin-bottom: 1rem;
+    }
+
     .works__slider--under {
         margin-bottom: 3rem;
-        opacity: 0;
-        transform: translateY(1rem);
     }
 
     .works__slider--top img, .works__slider--under img {
@@ -307,6 +308,7 @@
     .works__section .more__btn a {
         opacity: 0;
         transform: translateY(1rem);
+        display: block;
     }
     /* end  */
 
@@ -368,7 +370,7 @@
     /* aboutus sp style start  */
     .aboutus__section {
         height: 600px;
-        margin: 16rem 0 18rem;
+        margin: 16rem 0 20rem;
     }
     .aboutus__bg--title {
         position: absolute;
@@ -398,6 +400,9 @@
     /* end  */
 
     /* service sp style start  */
+    .service__section {
+        margin: 8rem 0;
+    }
     .service__box {
         flex-flow: column;
     }
@@ -417,9 +422,13 @@
     /* end  */
 
     /* works sp style start  */
+    .works__section {
+        margin: 8rem 0;
+    }
     .works__slider--top img, .works__slider--under img {
         width: 280px;
         height: 240px;
     }
+
     /* end  */
 }

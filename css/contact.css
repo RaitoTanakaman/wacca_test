@@ -7,16 +7,22 @@
 
 .u-contact__section .section__title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin:0 auto 4rem auto;
+    opacity: 0;
+    transform: translateY(1rem);
 }
 .contact__tips {
     margin-bottom: 4rem;
     text-align: center;
+    opacity: 0;
+    transform: translateY(1rem);
 }
 
 .form__box {
     background-color: #F6F7F0;
     padding: 6rem 4rem;
+    opacity: 0;
+    transform: translateY(1rem);
 }
 
 .input__box {

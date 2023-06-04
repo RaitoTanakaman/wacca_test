@@ -6,13 +6,17 @@
 
     .u-service__section .section__title {
         text-align: center;
-        margin-bottom: 8rem;
+        margin: 0 auto 8rem auto;
+        opacity: 0;
+        transform: translateY(1rem);
     }
 
     .u-service__box {
         display: flex;
         justify-content: space-between;
         margin-bottom: 8rem;
+        opacity: 0;
+        transform: translateY(1rem);
     }
 
     .u-service__box img {
@@ -59,6 +63,11 @@
         margin: 8rem auto;
     }
 
+    .flow__section .under__title--second {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
     .flow__box {
         margin: 4rem 0 6rem 0;
         display: flex;
@@ -75,6 +84,8 @@
         flex-flow: column;
         align-items: center;
         justify-content: center;
+        opacity: 0;
+        transform: translateX(-1rem);
         
     }
 
@@ -88,6 +99,16 @@
 
     .flow__section p {
         text-align: center;
+    }
+
+    .flow__tips {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    .flow__arrow {
+        opacity: 0;
+        transform: translateX(-1rem);
     }
     /* end  */
 
