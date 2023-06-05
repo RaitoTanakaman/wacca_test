@@ -216,5 +216,8 @@
     .company__section {
         margin: 6rem auto 8rem auto;
     }
+    .company__section table tbody tr .td__left {
+        width: 100px;
+    }
     /* end  */
 }

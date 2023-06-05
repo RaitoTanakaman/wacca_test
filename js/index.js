@@ -102,9 +102,9 @@ $('.side__menu').on('click', function() {
 
 $('.fa-solid').on('click', function() {
     $('body').css('overflow', '');
-
     $('.nav__menu--modal').removeClass('fadein__normal');
     $('.modal__menu li a').removeClass('fadein__high');
+    $('.close__sp').removeClass('fadein__normal');
 
 
 
@@ -175,6 +175,7 @@ $(function() {
             $('.logo__box').addClass('fadein__normal');
             $('.header__container img').addClass('fadein__normal');
             $('.nav__menu a').each(function(k,v) {
+
                 setTimeout(() => {
                     $(this).addClass('fadein__high');
         
@@ -184,12 +185,9 @@ $(function() {
         },600);
 
         setTimeout(() => {
-            
             $('.header__title .title__english').addClass('fadein__normal');
         }, 200);
 
-        
-        
     }, 400);
 
     setTimeout(() => {
