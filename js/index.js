@@ -194,7 +194,7 @@ $(function() {
 
     setTimeout(() => {
         $('#circular__box').css('opacity', '1');
-    }, 2800);
+    }, 2400);
 });
 
 
