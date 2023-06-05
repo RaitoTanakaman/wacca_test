@@ -163,7 +163,7 @@
 @media screen and (max-width: 480px) {
 
     .u-aboutus__section {
-        margin-bottom: 8rem;
+        margin:8rem 0;
     }
     .u-aboutus__section .section__title {
         margin-bottom: 4rem;
@@ -211,6 +211,10 @@
 
     .member__card .title__underline {
         margin-bottom: 1.5rem;
+    }
+
+    .company__section {
+        margin: 6rem auto 8rem auto;
     }
     /* end  */
 }

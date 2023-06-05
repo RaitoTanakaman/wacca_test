@@ -36,6 +36,7 @@
     //end
     $('.header__title h1').html('<h1>まるでSNSのような、<br><span>"Wacca"</span> をつくる。</h1>');
     $('.aboutus__content').html('<h3>まるでSNSのような、<br><span>"Wacca"</span> をつくる。</h3><p>私たちWacca(輪っか)は、2023年に設立しました。昨今では、SNSでたくさんの出会いや繋がりができますその出会いはとても素晴らしく、ビジネスの幅を広げるだけでなく、自身や企業が新たな世界を作るツールとなっています。私たちは、出会いや繋がりを"Wacca"(輪っか)と呼んでいます。WebサイトをSNSのようにもっと多くの人や世界を繋ぐツールにしたいと考えています。SNSのように手軽に扱えることができ、新たな出会いを作るWebサイトを私たちが作ります。</p>');
+    $(`.flow__circle, .flow__arrow`).css('transform', 'translateY(-1rem)');
     } else {
         // home works slider script start
     $(document).ready(function(){
@@ -72,6 +73,12 @@
 // under information category menu script start 
 $('.category__list').on('click', function() {
     $('.category__nav ul').css('display', 'flex');
+    $.each($('.category__nav ul li a'), function(i, v) {
+        setTimeout(() => {
+            $(v).addClass('fadein__high');
+        }, 200*i);
+    })
+    
 });
 // end 
 
@@ -80,23 +87,52 @@ $('.category__list').on('click', function() {
 
 // sidemenu script start 
 $('.side__menu').on('click', function() {
-    $('.nav__menu--modal').css('display', 'flex');
+    $('.nav__menu--modal').addClass('fadein__normal');
     $('body').css('overflow', 'hidden');
+
+    $.each($('.modal__menu li a'), function(i, v) {
+        setTimeout(() => {
+            setTimeout(() => {
+                $(v).addClass('fadein__high');
+            }, 200*i);
+        }, 1000);
+    });
 });
 
+
 $('.fa-solid').on('click', function() {
-    $('.nav__menu--modal').css('display', 'none');
     $('body').css('overflow', '');
+
+    $('.nav__menu--modal').removeClass('fadein__normal');
+    $('.modal__menu li a').removeClass('fadein__high');
+
+
+
 })
 // end 
 
 
 // hamburger script start 
 $('.hamburger__icon').on('click', function() {
-    $('.nav__menu--modal').css('display', 'flex');
+    $('.nav__menu--modal').addClass('fadein__normal');
     $('body').css('overflow', 'hidden');
+    $.each($('.modal__menu li a'), function(i, v) {
+        setTimeout(() => {
+            setTimeout(() => {
+                $(v).addClass('fadein__high');
+            }, 200*i);
+            setTimeout(() =>{
+                $('.close__sp').addClass('fadein__normal');
+            }, 1400)
+        }, 1000);
+    });
 });
 // end 
+
+// sidemenu animation 
+
+
+
 
 //hover action disable
 var touch = 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
@@ -119,13 +155,17 @@ if(touch) {
 }
 //end
 
+
+
+
+
 // fade in animation script 
 $(function() {
     setTimeout(() => {
         $('.header__title h1').addClass('fadein__high');
         $(`.u-information__section .section__title,
         .u-aboutus__section .section__title,
-        u-service__section .section__title,
+        .u-service__section .section__title,
         .u-contact__section .section__title,
         .u-works__section .section__title,
         .contact__tips,
@@ -154,7 +194,7 @@ $(function() {
 
     setTimeout(() => {
         $('#circular__box').css('opacity', '1');
-    }, 4200);
+    }, 2800);
 });
 
 
@@ -182,7 +222,7 @@ $(function() {
     '.member__section .under__title--second',
     '.member__card img',
     '.member__card--content',
-    'company__section .under__title--second',
+    '.company__section .under__title--second',
     '.company__section table',
     '#service__first',
     '#service__second',

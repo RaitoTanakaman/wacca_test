@@ -66,6 +66,10 @@
         width: 100%;
     }
 
+    .contact__tips {
+        margin: 0 0.5rem 4rem;
+    }
+
     .form__box {
         padding: 4rem 2rem;
     }

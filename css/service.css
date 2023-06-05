@@ -116,11 +116,11 @@
     @media screen and (max-width: 480px) {
         .u-service__section {
             width: 90%;
-            margin: 4rem auto;
+            margin: 8rem auto;
         }
 
         .u-service__section .section__title {
-            margin-bottom: 8rem;
+            margin-bottom: 6rem;
         }
 
         .u-service__box {
@@ -158,6 +158,8 @@
 
         .flow__arrow {
             margin: 1rem;
+        }
+        .flow__arrow i {
             transform: rotate(90deg);
         }
 
